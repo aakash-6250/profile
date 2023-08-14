@@ -17,8 +17,8 @@
         }
 
         body {
-            background-color: rgb(0, 0, 33);
-            color: white;
+            background-color: #F1F6F9;
+            color: #212A3E;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -27,7 +27,12 @@
             align-items: center;
             justify-content: space-around;
             height: 80px;
-            background-color: rgb(20, 20, 87);
+            background-color: #212A3E;
+        }
+
+        .navLeft{
+            color: #F1F6F9;
+            font-size: 1.5rem;
         }
 
         nav ul{
@@ -40,8 +45,15 @@
             margin: 0 23px;
         }
 
-        .left{
-            font-size: 1.5rem;
+        .navRight ul li a{
+            text-decoration: none;
+            color: #F1F6F9;
+        }
+
+
+        .navRight ul li a:hover{
+            color: #F1F6F9;
+            font-size: 1.04rem;
         }
 
         .firstSection{
@@ -50,16 +62,18 @@
             margin: 23px 0;
         }
 
-        .firstSection > div{
-            width: 30%;
-        }
 
-        .leftSection{
+        .firstSectionLeft{
             font-size: 3rem;
+            width: 40%;
         }
 
-        .rightSection img {
-            width: 80%;
+        .firstSectionRight{
+            width: 50%;;
+        }
+
+        .firstSectionRight img {
+            width: 100%;
         }
 
     </style>
@@ -68,14 +82,14 @@
 <body>
     <header>
         <nav>
-            <div class="left">Aakash's Portfolio</div>
-            <div class="right">
+            <div class="navLeft">Aakash Patel</div>
+            <div class="navRight">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contect Me</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contect Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -83,12 +97,14 @@
 
     <main>
         <section class="firstSection">
-            <div class="leftSection">
+            <div class="firstSectionLeft">
                 Hi, My name is Aakash
-                <div>and I am a Web Developer</div>
+                <div>
+                and I am a Web Developer
+                </div>
             </div>
-            <div class="rightSection">
-                <img src="bg.png" alt="background image">
+            <div class="firstSectionRight">
+                <img src="profile.png" alt="background image">
             </div>
         </section>
     </main>

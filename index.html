@@ -22,12 +22,18 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        html{
+            width: 100%;
+        }
+
         nav{
             display: flex;
             align-items: center;
             justify-content: space-around;
             height: 80px;
+            width: 100%;
             background-color: #212A3E;
+            position: sticky;
         }
 
         .navLeft{
@@ -57,58 +63,139 @@
         }
 
         .firstSection{
-            display: flex;
-            justify-content: space-around;
-            margin: 23px 0;
+            align-items: center;
+            text-align: center;
+            margin-top: 60px;
         }
 
 
         .firstSectionLeft{
             font-size: 3rem;
             width: 50%;
-            margin: 0 0 0 50px;
+            float: left;
+            padding-top: 70px;
+        }
+
+        .firstSectionLeftText{
+            color: #9BA4B5;
         }
 
         .firstSectionRight{
-            width: 50%;;
+            margin-bottom: -7px;
         }
 
         .firstSectionRight img {
-            width: 100%;
+            width: 50%;
         }
+
+        main hr{
+            border: 0;
+            background: #212A3E;
+            height: 1.2px;
+            
+        }
+
+        .secondSection{
+            padding: 0 50px;
+        }
+
+        #element{
+            color: #9BA4B5;
+        }
+
+        @media screen and (max-width: 1020px) {
+            .firstSectionLeft{
+                width: 50%;
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 810px) {
+            .firstSectionLeft{
+                width: 50%;
+                font-size: 2rem;             
+            }
+        }
+
+        @media screen and (max-width: 510px) {
+            .firstSectionLeft{
+                width: 100%;
+                font-size: 3rem;
+            }
+
+            .firstSectionRight{
+                width: 100%;
+            }
+
+            .firstSectionRight img {
+                width: 100%;
+            }
+
+            .navLeft{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .nav{
+                font-size: 1.5rem;
+            }
+
+            .navRight{
+                visibility:collapse;
+            }
+        }
+        
+
 
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="navLeft"><a href="https://www.linkedin.com/in/aakash6250/">Aakash Patel</a></div>
-            <div class="navRight">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contect Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="firstSection">
-            <div class="firstSectionLeft">
-                Hi, My name is Aakash Patel
-                <div>
-                and I am a <div>Web Developer</div>
+    <section class="wrapper">
+        <header>
+            <nav>
+                <div class="navLeft"><a href="https://www.linkedin.com/in/aakash6250/">Aakash Patel</a></div>
+                <div class="navRight">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contect Me</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="firstSectionRight">
-                <img src="profile.png" alt="background image">
-            </div>
-        </section>
-    </main>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="firstSection">
+                <div class="firstSectionLeft">
+                    Hi, My name is <span class="firstSectionLeftText">Aakash Patel</span>
+                    <div>
+                    and I am a <br><span id="element"></span>
+                    </div>
+                </div>
+                <div class="firstSectionRight">
+                    <img src="profile.png" alt="background image">
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <div>
+                    
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Bug Bounty Hunter','Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
 
 </body>
 

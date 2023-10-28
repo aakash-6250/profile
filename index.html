@@ -1,255 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet">
-    <title>Aakash Patel</title>
-    <style>
-        html body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-            background-color: #F1F6F9;
-            color: #212A3E;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        html{
-            width: 100%;
-            height: 100%;
-        }
-
-        nav{
-            align-items: center;
-            height: 80px;
-            width: 100%;
-            background-color: #212A3E;
-            position: sticky;
-        }
-
-        .navLeft{
-            color: #F1F6F9;
-            font-size: 1.5rem;
-        }
-
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav li{
-            list-style: none;
-        }
-
-        nav a{
-            text-decoration: none;
-            color: #F1F6F9;
-            
-        }
-
-
-        .navRight ul li a:hover{
-            color: #F1F6F9;
-            font-size: 1.04rem;
-
-
-        }
-
-        .firstSection{
-            text-align: center;
-        }
-
-
-        .firstSectionLeft{
-            font-size: 3rem;
-            width: 50%;
-            float: left;
-            padding-top: 70px;
-        }
-
-        .firstSectionLeftText{
-            color: #9BA4B5;
-        }
-
-        .firstSectionRight img {
-            width: 50%;
-        }
-
-        main hr{
-            border: 0;
-            background: #212A3E;
-            height: 1.2px;
-            margin-top: 0px;
-        }
-
-        .secondSection{
-            margin-top: 0px;
-            padding-top: 0px;
-        }
-
-        #element{
-            color: #9BA4B5;
-        }
-
-        @media screen and (max-width: 1920px) {
-            .firstSectionLeft{
-                width: 50%;
-                font-size: 2rem;
-            }
-
-            nav ul li{
-                margin: 0 23px;
-            }
-        }
-
-        @media screen and (max-width: 1280px) {
-            .firstSectionLeft{
-                width: 50%;
-                font-size: 2rem;
-            }
-
-            nav ul li{
-                margin: 0 23px;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .navRight{
-                width: 0px;
-            }
-        }
-
-        @media screen and (max-width: 500px) {
-            .firstSectionLeft{
-                width: 100%;
-                font-size: 3rem;
-            }
-
-            .firstSectionRight{
-                width: 100%;
-            }
-
-            .firstSectionRight img {
-                width: 100%;
-            }
-
-            .navLeft{
-                width: 100%;
-                height: 50%;
-                justify-content: center;
-                justify-items: center;
-            }
-
-            .nav{
-                font-size: 1.5rem;
-                position: sticky;
-            }
-
-            .navRight{
-                width: 100%;
-                height: 50%;
-                justify-content: center;
-                
-                justify-items: center;
-            }
-        }
-
-        @media screen and (max-width: 320px) {
-            .firstSectionLeft{
-                width: 100%;
-                font-size: 2rem;
-            }
-
-            .firstSectionRight{
-                width: 100%;
-            }
-
-            .firstSectionRight img {
-                width: 100%;
-            }
-
-
-            .navLeft{
-                float: left;
-                width: 100%;
-                height: 50%;
-                justify-content: center;
-                justify-items: center;
-            }
-
-            .nav{
-                font-size: 1.5rem;
-                position: sticky;
-            }
-
-            .navRight{
-                width: 100%;
-                height: 50%;
-                justify-content: center;
-                justify-items: center;
-            }
-        }
-        
-
-
-    </style>
+    <title>Aakash</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <section class="wrapper">
-        <header>
-            <nav>
-                <div class="navLeft"><a href="https://www.linkedin.com/in/aakash6250/">Aakash Patel</a></div>
-                <div class="navRight">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="/resume.pdf">Resume</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contect Me</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    
-        <main>
-            <section class="firstSection">
-                <div class="firstSectionLeft">
-                    Hi, My name is <span class="firstSectionLeftText">Aakash Patel</span>
-                    <div>
-                    and I am a <br><span id="element"></span>
-                    </div>
-                </div>
-                <div class="firstSectionRight">
-                    <img src="profile.png" alt="background image">
-                </div>
-            </section>
-            <hr>
-            <section class="secondSection">
-                <div>
-                    
-                </div>
-            </section>
-        </main>
-    </section>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Bug Bounty Hunter','Web Developer'],
-          typeSpeed: 50,
-        });
-      </script>
-
+    <div class="container">
+        <div class="darkmode"></div>
+        <div class="nav">
+            <div class="icon"></div>
+            <div class="pages">
+                <ul>
+                    <li>Work</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li class="facebook"></li>
+                    <li class="twitter"></li>
+                    <li class="linkedin"></li>
+                    <li class="gmail"></li>
+                    <li class="instagram"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro">
+                <h1>hi - i'm aakash <br>
+                    i'm doing design
+                </h1>
+            </div>
+            <div class="image">
+                <p style="position:relative; top: 105%; left: 20%; font-size: 30px;  width: max-content;">This is me!</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>

@@ -216,7 +216,16 @@ li{
 
 @media (max-width:810px) {
 
-    
+    .nav{
+        
+        margin-top: 20px;
+        background-color: yellow;
+    }
+
+    .icon{
+        width: 5vmax;
+        height: 5vmax;
+    }
 
     .social{
         display: none;

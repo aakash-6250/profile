@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Playpen Sans';
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.darkmode{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    rotate: -45deg;
+    left: 15px;
+    top: 15px;
+    
+}
+
+.darkmode::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(45%,0);
+
+}
+
+.nav{
+    padding: 2vmax;
+    margin-top: 1vmax;
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin: 0.5vmax;
+    font-weight: 500;
+    padding: 0;
+}
+
+.icon{
+    background: url(https://cdn-icons-png.flaticon.com/128/2633/2633345.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 50%;
+    width: 3vmax;
+    height: 3vmax;
+    margin: 0 0 0 200px;
+}
+
+.pages{
+    width: max-content;
+    padding: 0 70px;
+}
+
+.social{
+    width: max-content;
+    padding: 0 20px;
+}
+
+
+.content{
+    width: 100%;
+    height: 80%;
+}
+
+.intro{
+    width: max-content;
+    float: left;
+    margin: 200px 150px 200px 300px;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px black;
+    font-size: 25px;
+}
+
+.image{
+    width: 30%;
+    background:url(https://cdn.pixabay.com/photo/2018/10/26/06/55/anime-3773979_640.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    float: right;
+    margin-top: -100px;
+}
+
+.facebook{
+    background:url(https://cdn-icons-png.flaticon.com/128/3128/3128208.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.twitter{
+    background:url(https://cdn-icons-png.flaticon.com/128/733/733635.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.linkedin{
+    background:url(https://cdn-icons-png.flaticon.com/128/2111/2111532.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.gmail{
+    background:url(https://cdn-icons-png.flaticon.com/128/104/104069.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.instagram{
+    background:url(https://cdn-icons-png.flaticon.com/128/87/87390.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}

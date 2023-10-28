@@ -227,4 +227,16 @@ li{
         padding-bottom: 10px;
     }
 
+    li{
+        font-size: 3vmax;
+    }
+    ul{
+        justify-content: center;
+        margin: 1vmax;
+    }
+
+    .pages{
+        padding: 0 20px;
+    }
+
 }

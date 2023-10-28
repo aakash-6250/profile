@@ -224,5 +224,7 @@ li{
         height: 3vmax;
         padding-top: 14vmax;
         z-index: 5;
+        left: 50%;
+        transform: translate(-50%,0%);
     }
 }
